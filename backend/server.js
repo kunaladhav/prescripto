@@ -17,7 +17,15 @@ connectCloudinary();
 // Middlewares
 
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "https://prescripto-gamma-three.vercel.app/",
+      "https://prescripto-oug2.vercel.app/",
+    ],
+    credentials: true,
+  })
+);
 
 // API Endpoints
 app.use("/api/admin", adminRouter);
