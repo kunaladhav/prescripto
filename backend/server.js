@@ -20,8 +20,8 @@ app.use(express.json());
 app.use(
   cors({
     origin: [
-      "https://prescripto-gamma-three.vercel.app/",
-      "https://prescripto-oug2.vercel.app/",
+      "https://prescripto-gamma-three.vercel.app",
+      "https://prescripto-oug2.vercel.app",
     ],
     credentials: true,
   })
